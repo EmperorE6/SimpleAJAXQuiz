@@ -1,0 +1,15 @@
+.container{
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-top:35px;
+}
+#start_again{
+    margin-top: 20px;
+}
+#start{
+    font-weight: 600;
+    border-radius: 13px;
+    padding: 11px;
+
+}

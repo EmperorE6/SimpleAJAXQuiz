@@ -9,13 +9,24 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-<h1>NBA Quiz</h1>
-<button id="start">Generate question</button>
-<p><b>Question:</b></p>
-<p id="question"></p>
-<p><b>Anwers:</b></p>
-<input id="answer"></input>
-<button id="submit">Submit Answer</button>
-<button id="start_again">Start Again</button>
+    <div class="container">
+        <h1>NBA Quiz</h1>
+
+        <div class="questionClass">
+            <button id="start">Generate Questions</button>
+            <p><b>Question:</b></p>
+            <p id="question"></p>
+        </div>
+        
+        
+        <div class="answersClass">
+        <p><b>Anwer:</b></p>
+        <input id="answer"></input>
+        <button id="submit">Submit Answer</button>
+        </div>
+        
+        <button id="start_again">Start Again</button>
+        <p id="scoreCount">Score: 0</p>
+    </div>
 </body>
 </html>
