@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
     <question>
-        Which player has won most NBA titles?
+        What is the longest river in the world?
     </question>
-    <answer>Bill Russel</answer>
+    <answer>Nile</answer>
     <question>
-        Which year does Cleveland return from 1-3 in NBA Finals?
+       Which country has the most natural lakes?
     </question>
-    <answer>2016</answer>
+    <answer>Canada</answer>
     <question>
-        How manny MVPs Kareem Abdul Jabbar has?
+       What is the smallest country in the world by land area?
     </question>
-    <answer>6</answer>
+    <answer>Vatican</answer>
     <question>
-        Which year was Michael Jordan drafted?
+       Which desert is the largest in the world?
     </question>
-    <answer>1984</answer>
+    <answer>Sahara</answer>
+     <question>
+       Which country is known as the Land of the Rising Sun?
+    </question>
+    <answer>Japan</answer>
+    <question>
+       What is the capital of Australia?
+    </question>
+    <answer>Canberra</answer>
+    <question>
+        Which continent is the largest by land area?
+    </question>
+    <answer>Asia</answer>
+    <question>
+       Which European country is divided into departments instead of states or provinces?
+    </question>
+    <answer>France</answer>
 </quiz>

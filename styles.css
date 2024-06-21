@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    font-family: "Lora", serif;
+    font-style: oblique;
+}
 .container{
 text-align: center;
 align-items: center;
 justify-content: center;
 margin-top:35px;
+
 }
 #start_again{
     margin-top: 20px;
@@ -12,4 +18,65 @@ margin-top:35px;
     border-radius: 13px;
     padding: 11px;
 
+}
+#submit{
+    font-weight: 600;
+    border-radius: 13px;
+    padding: 6px;
+}
+#answer{
+    padding: 6px;
+    font-weight: 600;
+    width: 300px;
+    border-radius: 2px;
+}
+#start_again{
+    padding: 8px;
+    font-weight: 600;
+
+}
+p{
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+.globe img{
+    height: 350px;
+}
+.globe{
+    margin-top:25px;
+}
+#question img{
+height: 60px;
+}
+.finished{
+    display: none;
+}
+.finished img{
+    height: 70px;
+}
+.plus{
+    display: none;
+}
+.plus img{
+    height: 50px;
+}
+.minus{
+    display: none;
+}
+.minus img {
+    height: 50px;
+}
+.counter{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#scoreCount{
+    font-size: 40px;
+}
+#scoreText{
+    font-size:25px;
 }

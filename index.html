@@ -10,23 +10,41 @@
 </head>
 <body>
     <div class="container">
-        <h1>NBA Quiz</h1>
+        <h1>Geography Quiz</h1>
 
         <div class="questionClass">
             <button id="start">Generate Questions</button>
-            <p><b>Question:</b></p>
-            <p id="question"></p>
+            <p>Question:</p>
+            <p id="question"><img src="nothing.png"></p>
+            <div class="finished" id="finishedquiz">
+                <img src="end.png">
+            </div>
         </div>
         
         
         <div class="answersClass">
-        <p><b>Anwer:</b></p>
+        <p>Answer:</p>
         <input id="answer"></input>
         <button id="submit">Submit Answer</button>
         </div>
         
         <button id="start_again">Start Again</button>
-        <p id="scoreCount">Score: 0</p>
+
+        <div class="counter">
+            <div class="scoree"><p id="scoreText">Score: </p></div>
+            <div class="counting">
+            <p id="scoreCount">0</p>
+            </div>
+        </div>
+
+        <div class="plus" id="plusOne"><img src="up-arrow.png"></div>
+        <div class="minus" id="minusOne"><img src="download.png"></div>
+  
+
+        <div class="globe">
+            <img src="worldwide.png"></img>
+        </div>
+        
     </div>
 </body>
 </html>
