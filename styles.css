@@ -84,13 +84,13 @@ p{
     display: none;
 }
 .plus img{
-    height: 45px;
+    height: 70px;
 }
 .minus{
     display: none;
 }
 .minus img {
-    height: 45px;
+    height: 70px;
 }
 .counter{
     display:flex;
