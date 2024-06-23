@@ -3,12 +3,25 @@
     font-family: "Lora", serif;
     font-style: oblique;
 }
+body{
+    background-image: url(wr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .container{
+    position: relative;
 text-align: center;
 align-items: center;
 justify-content: center;
 margin-top:35px;
-
+background-color: rgb(162, 198, 214);
+width: 600px;
+margin: 0 auto;
+border-radius: 12px;
+padding: 5px;
+height: 920px;
+opacity:0.9;
 }
 #start_again{
     margin-top: 20px;
@@ -36,18 +49,30 @@ margin-top:35px;
 
 }
 p{
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
     
 }
 .globe img{
-    height: 350px;
+    height: 300px;
 }
 .globe{
-    margin-top:25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
 }
-#question img{
-height: 60px;
+#question{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#searchquestion img{
+    height: 60px;
 }
 .finished{
     display: none;
@@ -59,13 +84,13 @@ height: 60px;
     display: none;
 }
 .plus img{
-    height: 50px;
+    height: 45px;
 }
 .minus{
     display: none;
 }
 .minus img {
-    height: 50px;
+    height: 45px;
 }
 .counter{
     display:flex;
@@ -73,6 +98,7 @@ height: 60px;
     text-align: center;
     align-items: center;
     margin-top: 10px;
+    height: 80px;
 }
 #scoreCount{
     font-size: 40px;

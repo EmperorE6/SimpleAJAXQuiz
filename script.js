@@ -7,15 +7,19 @@ const submitAnswers = document.getElementById('submit');
 const finished=document.getElementById('finishedquiz');
 const plusOne=document.getElementById("plusOne");
 const minusOne=document.getElementById("minusOne");
-
+const notYetQuestion=document.getElementById("searchquestion")
 let questionNumber = 0;
-let scoreCounter=0;
+let scoreCounter = 0;
 
 //Funkcija za dobivanje na prasanjata od XML fajlot preku AJAX biblioteka
 function getQuestions() {
+    finished.style.display="none";
+    questionNumber=0;
+    scoreCounter=0;
+    score.textContent=scoreCounter;
+    submitAnswers.disabled=false;
     ajaxCallback = nextQuestion;
     ajaxRequest("questions.xml");
-
 }
 //Funkcija za dobivanje na sledno prasanje
 function nextQuestion() {
@@ -23,13 +27,16 @@ function nextQuestion() {
     if (questionNumber < questions.length) {
         const question = questions[questionNumber].firstChild.nodeValue;
         questionField.textContent = question;
-        finished.style.display="none"
+questionField.style.display="block";
+notYetQuestion.style.display="none";
+
     } else {
-        questionField.textContent= " ";
+        questionField.style.display="none";
         finished.style.display="block"
         submitAnswers.disabled=true;
-       
+        setTimeout(()=>alert(`You have finished the quiz with ${scoreCounter} points.Click ,,Start Quiz" to start again.`),500);//na delay od pola sekunda se pojavuva porakata po zavrsuvanje na kvizot
     }
+ 
 }
 
 //Funkcija za proverka na odgovorite so prasanjata od XML fajlot
@@ -65,17 +72,11 @@ function checkAnswer() {
     }
     questionNumber++;
     answerField.value = "";
-   setTimeout(()=>{ nextQuestion() ,submitAnswers.disabled=false},1000);
+   setTimeout(()=>submitAnswers.disabled=false,1000);
+   setTimeout(()=>nextQuestion(),1000);
     score.textContent=scoreCounter;
-    
 }
 
 startQuiz.onclick = getQuestions;
 submitAnswers.onclick = checkAnswer;
 
-startAgain.addEventListener("click",function (){
-    questionNumber=0;
-    scoreCounter=0;
-    score.textContent=scoreCounter;
-    getQuestions()
-})
